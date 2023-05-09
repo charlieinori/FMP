@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7679dca6e64c6f34599d9acbdd541264
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Tubes: {fileID: 915819960472121875, guid: aae80801ccc232a49a8552a2988a242f, type: 3}
+  - Spawner1: {instanceID: 0}
+  - Spawner2: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

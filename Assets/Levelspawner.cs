@@ -23,9 +23,9 @@ public class Levelspawner : MonoBehaviour
 
     public void Update()
     {
-        transform.position += new Vector3(0, 0, 5 * Time.deltaTime);
+        transform.position += new Vector3(0, 0, 10 * Time.deltaTime);
 
-        if (transform.position.z - DistanceTravelled >= 20)
+        if (transform.position.z - DistanceTravelled >= 29.85)
         {
             DistanceTravelled = transform.position.z;
             GameObject Spawned = Instantiate(Template, SpawnTo.transform);
