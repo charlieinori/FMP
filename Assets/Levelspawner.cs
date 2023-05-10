@@ -23,7 +23,7 @@ public class Levelspawner : MonoBehaviour
 
     public void Update()
     {
-        transform.position += new Vector3(0, 0, 10 * Time.deltaTime);
+        transform.position += new Vector3(0, 0, 7 * Time.deltaTime);
 
         if (transform.position.z - DistanceTravelled >= 29.85)
         {

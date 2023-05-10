@@ -14,6 +14,30 @@ public class BirdMovment : MonoBehaviour
     public  GameObject Cube1;
     public GameObject Cube2;
 
+    public TextMeshProUGUI ScoreText;
+    private float Score;
+
+
+    private void OnCollisionEnter(Collision col)
+    {
+
+        if (col.collider.tag == "Obstacle")
+        {
+            Debug.Log("working Collision");
+            SceneManager.LoadScene("Scene1");
+
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Point")
+        {
+            Score = Score + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f;
+        }
+
+       
+    }
+ 
 
     private void Start()
     {
@@ -22,6 +46,7 @@ public class BirdMovment : MonoBehaviour
 
    private void Update()
     {
+        ScoreText.text = Score.ToString();
         #region Movement 
         Velocity.y += -15 * Time.deltaTime;
         if (Input.GetKey("space") && Cooldown == false)
@@ -54,7 +79,7 @@ public class BirdMovment : MonoBehaviour
 
     private IEnumerator CooldownRefresh()
     {
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.2f);
         Cooldown= false;
     }
 }  
