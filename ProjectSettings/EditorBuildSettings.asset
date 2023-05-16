@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/birdheatdeath.unity
+    guid: b47e399357c90794da69932e891836b9
+  - enabled: 1
+    path: Assets/Scenes/Scene2.unity
+    guid: 9f2abbfe4ac939c458216b634280d643
   m_configObjects: {}

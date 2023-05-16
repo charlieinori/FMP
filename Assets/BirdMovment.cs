@@ -24,7 +24,7 @@ public class BirdMovment : MonoBehaviour
         if (col.collider.tag == "Obstacle")
         {
             Debug.Log("working Collision");
-            SceneManager.LoadScene("Scene1");
+            SceneManager.LoadScene("birdheatdeath");
 
         }
     }
@@ -33,6 +33,11 @@ public class BirdMovment : MonoBehaviour
         if(other.tag == "Point")
         {
             Score = Score + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f;
+        }
+
+        if (Score == 20)
+        {
+            SceneManager.LoadScene("Scene2");
         }
 
        

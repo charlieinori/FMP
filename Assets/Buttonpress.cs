@@ -9,4 +9,8 @@ public class Buttonpress : MonoBehaviour
     {
         SceneManager.LoadScene("Scene1");
     }
+    public void Buttonpress3()
+    {
+        SceneManager.LoadScene("Scene2");
+    }
 }
