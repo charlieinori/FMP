@@ -1,15 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Death : MonoBehaviour
 {
-    public Transform teleportTarget;
-    public GameObject Player;
+
 
     void OnTriggerEnter(Collider FallingPoint)
     {
-        Player.transform.position = teleportTarget.transform.position;
+        SceneManager.LoadScene("deaths");
     }
 
 }
