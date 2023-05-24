@@ -32,7 +32,7 @@ public class BirdMovment : MonoBehaviour
     {
         if(other.tag == "Point")
         {
-            Score = Score + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f;
+            Score = Score + 0.5f;
         }
 
         if (Score == 20)
